@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* White background */
+}
+
+header {
+    background-color: #000000; /* Black background */
+    color: #FFA500; /* Orange text */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space out brand and nav items */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    position: relative;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+}
+
+.brand-name a {
+    color: #FFA500; /* Orange text */
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+.navbar nav {
+    flex: 1; /* Take up available space */
+    display: flex;
+    justify-content: flex-end; /* Keep nav items on the right */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Keep nav items on the right */
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFA500; /* Orange text */
+    text-decoration: none;
+}
+
+#playVideoBtn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 26px; /* Match the font size of Avanta */
+    font-weight: bold; /* Match the font weight of Avanta */
+    font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
+    color: #FFA500; /* Orange text */
+    background-color: transparent; /* Make the button background transparent */
+    border: 2px solid transparent; /* Optional: Add an orange border */
+    cursor: pointer;
+    line-height: 0;
+}
+
+
+.title-section {
+    display: grid;
+    grid-template-columns: 1fr minmax(400px, 2fr) 1fr; /* Control the size of the middle section */
+    text-align: center;
+    padding: 0px 0px 0px 0px; /* No padding */
+}
+
+.title-section h1 {
+    grid-column: 2; /* Place title in the middle section */
+    font-family: 'Playfair Display', serif; /* Apply Playfair Display font to the title */
+    color: #008080; /* Dark Grey text */
+    font-size: 2.25em; /* Increase font size by 1.5 times */
+}
+
+.title-section p {
+    grid-column: 2; /* Place paragraph in the middle section */
+    font-family: 'Lato', sans-serif; /* Apply Lato font to the paragraph */
+    color: #333333; /* Dark Grey text */
+    font-size: 1.5em; /* Increase font size by 1.5 times */
+    padding: 20px; /* Add padding to the paragraph */
+}
+
+.title-section .left-bg, .title-section .right-bg {
+    background-color: #F2F2F2; /* Light Grey background */
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    height: 800px; /* Set height of the horizontal bar */
+    gap: 5px; /* Add space between images */
+    padding: 5px 0px 0px 0px; /* No padding at the bottom */
+}
+
+.image-gallery img {
+    width: 100%; /* Make images fill the column width */
+    height: 100%; /* Make images fill the specified height */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+    image-rendering: pixelated; /* Ensure images are not blurry */
+}
+
+footer {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Updated line */
+    bottom: 0; /* Updated line */
+    width: 100%; /* New line added */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #FFA500; /* Orange text */
+}
+
+/* **Button Container** */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* **Video Overlay CSS** */
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.video-overlay:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.video-overlay video {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close-video {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+}
