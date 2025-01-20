@@ -1,4 +1,4 @@
-/* styles.css */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -7,12 +7,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #FFFFFF; /* White background */
+    background-color: #FFFFFF; 
 }
 
 header {
-    background-color: #000000; /* Black background */
-    color: #FFA500; /* Orange text */
+    background-color: #000000; 
+    color: #FFA500; 
 }
 
 .navbar {
@@ -28,8 +28,8 @@ header {
 }
 
 .brand-name a {
-    color: #FFA500; /* Orange text */
-    text-decoration: none; /* Remove the underline from the link */
+    color: #FFA500; 
+    text-decoration: none; 
 }
 
 nav ul {
@@ -45,14 +45,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFA500; /* Orange text */
+    color: #FFA500; 
     text-decoration: none;
 }
 
 .hero-image {
     width: 100%;
-    height: 1000px; /* Adjust height as needed */
-    background: url('travel_agency_large.jpg') no-repeat center center/cover; /* Ensure the image covers the section */
+    height: 1000px; 
+    background: url('travel_agency_large.jpg') no-repeat center center/cover; 
     image-rendering: pixelated;
     display: flex;
     justify-content: center;
@@ -60,20 +60,20 @@ nav ul li a {
 }
 
 .hero-image img {
-    display: none; /* Hide the img tag as we are using background image */
+    display: none; 
 }
 
 .welcome-message {
     display: grid;
-    grid-template-columns: 1fr minmax(auto, 900px) 1fr; /* Split into three sections */
+    grid-template-columns: 1fr minmax(auto, 900px) 1fr; 
     text-align: center;
     padding: 0px;
-    font-family: 'Playfair Display', serif; /* Apply Playfair Display font to welcome message */
-    font-size: 1.2em; /* Increase the font size slightly */
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.2em; 
 }
 
 .welcome-message .left-bg, .welcome-message .right-bg {
-    background-color: #F2F2F2; /* Light Grey background */
+    background-color: #F2F2F2; 
 }
 
 .welcome-message .left-bg {
@@ -85,21 +85,21 @@ nav ul li a {
 }
 
 .welcome-message h2 {
-    grid-column: 2; /* Center the text in the middle section */
-    color: #008080; /* Teal text */
+    grid-column: 2; 
+    color: #008080; 
 }
 
 .welcome-message p {
-    grid-column: 2; /* Center the text in the middle section */
-    padding: 20px; /* Add padding around the paragraph */
-    font-family: 'Lato', sans-serif; /* Apply Lato font to the block of text */
-    font-size: 1.2em; /* Increase the font size slightly */
-    color: #333333; /* Dark Grey text */
+    grid-column: 2; 
+    padding: 20px; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 1.2em; 
+    color: #333333; 
 }
 
 footer {
-    background-color: #000000; /* Black background */
-    color: #FFFFFF; /* White text */
+    background-color: #000000; 
+    color: #FFFFFF; 
     text-align: center;
     padding: 10px;
     position: relative;
@@ -121,5 +121,5 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #FFA500; /* Orange text */
+    color: #FFA500; 
 }
