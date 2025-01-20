@@ -2,18 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF; /* White background */
+    background-color: #FFFFFF; 
 }
 
 header {
-    background-color: #000000; /* Black background */
-    color: #FFA500; /* Orange text */
+    background-color: #000000; 
+    color: #FFA500; 
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Space out brand and nav items */
-    align-items: center; /* Center items vertically */
+    justify-content: space-between; 
+    align-items: center; 
     padding: 20px;
     position: relative;
 }
@@ -26,14 +26,14 @@ header {
 }
 
 .brand-name a {
-    color: #FFA500; /* Orange text */
-    text-decoration: none; /* Remove the underline from the link */
+    color: #FFA500; 
+    text-decoration: none; 
 }
 
 .navbar nav {
-    flex: 1; /* Take up available space */
+    flex: 1; 
     display: flex;
-    justify-content: flex-end; /* Keep nav items on the right */
+    justify-content: flex-end; 
     align-items: center;
 }
 
@@ -41,7 +41,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: flex-end; /* Keep nav items on the right */
+    justify-content: flex-end; 
     margin: 0;
 }
 
@@ -50,22 +50,22 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFA500; /* Orange text */
+    color: #FFA500; 
     text-decoration: none;
 }
 
 #playVideoBtn {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Center the button horizontally */
+    transform: translateX(-50%); 
     display: inline-block;
     padding: 10px 20px;
-    font-size: 26px; /* Match the font size of Avanta */
-    font-weight: bold; /* Match the font weight of Avanta */
-    font-family: 'Playfair Display', serif; /* Apply Playfair Display font */
-    color: #FFA500; /* Orange text */
-    background-color: transparent; /* Make the button background transparent */
-    border: 2px solid transparent; /* Optional: Add an orange border */
+    font-size: 26px; 
+    font-weight: bold; 
+    font-family: 'Playfair Display', serif; 
+    color: #FFA500; 
+    background-color: transparent; 
+    border: 2px solid transparent; 
     cursor: pointer;
     line-height: 0;
 }
@@ -73,53 +73,53 @@ nav ul li a {
 
 .title-section {
     display: grid;
-    grid-template-columns: 1fr minmax(400px, 2fr) 1fr; /* Control the size of the middle section */
+    grid-template-columns: 1fr minmax(400px, 2fr) 1fr; 
     text-align: center;
-    padding: 0px 0px 0px 0px; /* No padding */
+    padding: 0px 0px 0px 0px; 
 }
 
 .title-section h1 {
-    grid-column: 2; /* Place title in the middle section */
-    font-family: 'Playfair Display', serif; /* Apply Playfair Display font to the title */
-    color: #008080; /* Dark Grey text */
-    font-size: 2.25em; /* Increase font size by 1.5 times */
+    grid-column: 2; 
+    font-family: 'Playfair Display', serif; 
+    color: #008080; 
+    font-size: 2.25em; 
 }
 
 .title-section p {
-    grid-column: 2; /* Place paragraph in the middle section */
-    font-family: 'Lato', sans-serif; /* Apply Lato font to the paragraph */
-    color: #333333; /* Dark Grey text */
-    font-size: 1.5em; /* Increase font size by 1.5 times */
-    padding: 20px; /* Add padding to the paragraph */
+    grid-column: 2; 
+    font-family: 'Lato', sans-serif; 
+    color: #333333; 
+    font-size: 1.5em; 
+    padding: 20px; 
 }
 
 .title-section .left-bg, .title-section .right-bg {
-    background-color: #F2F2F2; /* Light Grey background */
+    background-color: #F2F2F2; 
 }
 
 .image-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    height: 800px; /* Set height of the horizontal bar */
-    gap: 5px; /* Add space between images */
-    padding: 5px 0px 0px 0px; /* No padding at the bottom */
+    grid-template-columns: repeat(3, 1fr); 
+    height: 800px; 
+    gap: 5px; 
+    padding: 5px 0px 0px 0px; 
 }
 
 .image-gallery img {
-    width: 100%; /* Make images fill the column width */
-    height: 100%; /* Make images fill the specified height */
-    object-fit: cover; /* Ensure images cover the area without stretching */
-    image-rendering: pixelated; /* Ensure images are not blurry */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    image-rendering: pixelated; 
 }
 
 footer {
-    background-color: #000000; /* Black background */
-    color: #FFFFFF; /* White text */
+    background-color: #000000; 
+    color: #FFFFFF; 
     padding: 10px;
     text-align: center;
-    position: relative; /* Updated line */
-    bottom: 0; /* Updated line */
-    width: 100%; /* New line added */
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
 }
 
 footer ul {
@@ -136,17 +136,15 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #FFA500; /* Orange text */
+    color: #FFA500; 
 }
 
-/* **Button Container** */
 .button-container {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-/* **Video Overlay CSS** */
 .video-overlay {
     position: fixed;
     top: 0;
